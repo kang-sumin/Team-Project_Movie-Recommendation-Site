@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>평점순</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        /* 표 전체 */
+        table {
+            background-color: black;
+            width: 100%;
+        }
+
+        /* 메뉴바 */
+        a { 
+            text-decoration: none; 
+            color: inherit;
+        }
+        .menubar {
+            position: fixed; /* 메뉴바 고정 */
+            top: 0px; 
+            left: 0px; 
+            right: 0px; 
+            z-index: 1; /* 메뉴바 상단 위치 순위 */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- 로고 및 메뉴바 -->
+    <div class="menubar">
+        <table style="font-size:20px; height:100px;">
+            <tr>
+                <th width="20%" style="font-size:40px;">
+                    <a href="현재 상영 영화.html">Movie Theater</a>
+                </th>
+                <td width="10%"></td>
+                <td width="10%" style="text-align:center;">
+                    <a href="현재 상영 영화.html">현재 상영 영화</a>
+                </td>
+                <td width="10%" style="text-align:center;">
+                    <a href="2021년 국내 영화.html">2021년 영화</a>
+                </td>
+                <td width="10%" style="text-align:center;">
+                    <a href="2020년 국내 영화.html">2020년 영화</a>
+                </td>
+                <td width="10%" style="text-align:center;">
+                    <a href="2019년 국내 영화.html">2019년 영화</a>
+                </td>
+                <td width="10%" style="text-align:center; border-style:solid; border-color:black black white black;">
+                    <a href="평점순.html">평점순</a>
+                </td>
+                <td width="20%"></td>
+            </tr> 
+        </table>  
+    </div> 
+
+    <!-- menubar 때문에 body에서 margin-top:100px 하고 작성해야함!!!!!! -->
+    <br><br><br><br><br>
+    <h1>여기서부터 작성하시면 됩니당</h1>
+</body>
+</html>
