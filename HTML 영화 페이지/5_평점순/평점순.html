@@ -28,9 +28,39 @@
             z-index: 1; /* 메뉴바 상단 위치 순위 */
         }
 
+        /*외쪽 고정 메뉴바*/
+        .leftmenu{
+            list-style-type: none;
+            background-color: black;
+            width: 20%;
+            padding: 0;
+            margin:0;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        li a{
+            text-decoration: none;
+            display: block;
+            color:#fff;
+            padding: 8px 15px 8px 15px;
+            font-weight: bold;
+        }
+
+        li a.job{
+            background-color: tomato;
+            color:rgb(0, 0, 0);
+        }
+        li a:hover:not(.job){
+            background-color: gray;
+            color:black;
+        }
+
+
         
     </style>
 </head>
+
 <body>
     <!-- 로고 및 메뉴바 -->
     <div class="menubar">
@@ -61,7 +91,35 @@
     </div> 
 
     <!-- menubar 때문에 body에서 margin-top:100px 하고 작성해야함!!!!!! -->
-    <br><br><br><br><br>
-    <h1>여기서부터 작성하시면 됩니당</h1>
+
+    <div style="margin-top:120px;">
+        <ul class="leftmenu">
+            <li><a href="#">관람객 평점순</a>
+                <ul type="none">
+                    <li><a href="#">2021년 영화</a></li>
+                    <li><a href="#">2020년 영화</a></li>
+                    <li><a href="#">2019년 영화</a></li>
+                </ul>
+            </li>    
+            <li><a href="#">평론가 평점순</a>
+                <ul type="none">
+                    <li><a href="#">2021년 영화</a></li>
+                    <li><a href="#">2020년 영화</a></li>
+                    <li><a href="#">2019년 영화</a></li>
+                </ul> 
+            </li>
+            <li><a href="#">네티즌 평점순</a>
+                <ul type="none">
+                    <li><a href="#">2021년 영화</a></li>
+                    <li><a href="#">2020년 영화</a></li>
+                    <li><a href="#">2019년 영화</a></li>
+                </ul> 
+            </li>
+        </ul>
+    </div>
+    <div style="margin-left:20%; padding:1px 16px; height:1000px;">
+        <h1>testtesttesttesttesttesttest</h1>
+        
+    </div>
 </body>
 </html>
