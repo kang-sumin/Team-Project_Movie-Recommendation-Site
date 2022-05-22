@@ -28,6 +28,8 @@
             z-index: 1; /* 메뉴바 상단 위치 순위 */
         }
 
+        ul,li { list-style: none; }
+
         /*외쪽 고정 메뉴바*/
         .leftmenu{
             list-style-type: none;
@@ -56,8 +58,31 @@
             color:black;
         }
 
+        /* 영화 포스터 이미지 확대*/
+        a img { transition: all 0.2s linear; width:100%}
+        a:hover img { transform: scale(1.4); }
 
-        
+        /* 영화 포스터 간격 */
+        .now_movie_reservation th { width: 18.4%; }
+        .now_movie_reservation td { width: 2%; }
+
+        .moviename {
+            font-size: 13px; 
+            text-align: center;
+        }
+
+        .movie_table{
+            max-width: 100%;
+            position:relative;
+        }
+        table{
+            max-width: 100%;
+            border-collapse: collapse;
+            border:1px white;
+        }
+        table th{
+            width:18.4%;
+        }
     </style>
 </head>
 
@@ -95,21 +120,21 @@
     <div style="margin-top:120px;">
         <ul class="leftmenu">
             <li><a href="#">관람객 평점순</a>
-                <ul type="none">
+                <ul>
                     <li><a href="#">2021년 영화</a></li>
                     <li><a href="#">2020년 영화</a></li>
                     <li><a href="#">2019년 영화</a></li>
                 </ul>
             </li>    
             <li><a href="#">평론가 평점순</a>
-                <ul type="none">
+                <ul>
                     <li><a href="#">2021년 영화</a></li>
                     <li><a href="#">2020년 영화</a></li>
                     <li><a href="#">2019년 영화</a></li>
                 </ul> 
             </li>
             <li><a href="#">네티즌 평점순</a>
-                <ul type="none">
+                <ul>
                     <li><a href="#">2021년 영화</a></li>
                     <li><a href="#">2020년 영화</a></li>
                     <li><a href="#">2019년 영화</a></li>
@@ -117,8 +142,78 @@
             </li>
         </ul>
     </div>
+
+    <!--관람객 평점순-->
     <div style="margin-left:20%; padding:1px 16px; height:1000px;">
-        <h1>testtesttesttesttesttesttest</h1>
+        <!--2021년 영화-->
+        <div class="now_movie_reservation">
+            <h1>2021년 영화</h1>
+            <table>
+                <tr>
+                    <th><!--모가디슈-->
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=192150" target="_blank">
+                            <img src="https://movie-phinf.pstatic.net/20210820_122/1629448997924YXUCv_JPEG/movie_image.jpg">
+                        </a>
+                    </th>
+                    <td></td>
+                    <th><!--보이스-->
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=190320" target="_blank">
+                            <img src="https://movie-phinf.pstatic.net/20210831_152/1630371935224qy9s6_JPEG/movie_image.jpg">
+                        </a>
+                    </th>
+                    <td></td>
+                    <th><!--발신제한-->
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=194205" target="_blank">
+                            <img src="https://movie-phinf.pstatic.net/20210609_138/1623220637715dKMK5_JPEG/movie_image.jpg">
+                        </a>
+                    </th>
+                    <td></td>
+                    <th><!--인질-->
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=185614" target="_blank">
+                            <img src="https://movie-phinf.pstatic.net/20210923_298/1632376015399DWJAd_JPEG/movie_image.jpg">
+                        </a>
+                    </th>
+                    <td></td>
+                    <th><!--싱크홀-->
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=188472" target="_blank">
+                            <img src="https://movie-phinf.pstatic.net/20210726_114/1627265960693kkM0B_JPEG/movie_image.jpg">
+                        </a>
+                    </th>
+                </tr>
+            </table>
+            <table class="now_movie_reservation" width="100%">
+                <tr>
+                    <th><br>모가디슈<br><img src="../images/icon/Yellow Star.png" width="12px">8.67</th>
+                </tr>
+                <td></td>
+                <tr>
+                    <th><br>보이스<br><img src="../images/icon/Yellow Star.png" width="12px">7.86</th>
+                </tr>
+                <td></td>
+                <tr>
+                    <th><br>발신제한<br><img src="../images/icon/Yellow Star.png" width="12px">7.60</th>
+                </tr>
+                <td></td>
+                <tr>
+                    <th><br>인질<br><img src="../images/icon/Yellow Star.png" width="12px">7.14</th>
+                </tr>
+                <td></td>
+                <tr>
+                    <th><br>싱크홀<br><img src="../images/icon/Yellow Star.png" width="12px">7.01</th>
+                </tr>
+            </table>
+                
+            
+            
+        </div>
+        <!--2020년 영화-->
+        <div>
+            <h1>2020년 영화</h1>
+        </div>
+        <!--2019년 영화-->
+        <div>
+            <h1>2019년 영화</h1>
+        </div>
         
     </div>
 </body>
