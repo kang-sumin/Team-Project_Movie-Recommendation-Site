@@ -75,15 +75,13 @@
             max-width: 100%;
             position:relative;
         }
+        /*테이블 라인 보여줌
         table, th, td {
             max-width: 100%;
             border-collapse: collapse;
             border:5px solid white;
-        }
-        /*
-        table th{
-            width:18.4%;
         }*/
+
     </style>
 </head>
 
@@ -96,7 +94,7 @@
                     <a href="../1_HTML 영화 메인 페이지(현재상영작)/현재 상영 영화.html">Movie Theater</a>
                 </th>
                 <td width="10%"></td>
-                <td width="10%" style="text-align:center; border-style:solid; border-color:black black white black;">
+                <td width="10%" style="text-align:center;">
                     <a href="../1_HTML 영화 메인 페이지(현재상영작)/현재 상영 영화.html">현재 상영 영화</a>
                 </td>
                 <td width="10%" style="text-align:center;">
@@ -108,8 +106,8 @@
                 <td width="10%" style="text-align:center;">
                     <a href="../4_2019 BEST 페이지/2019년 국내 영화.html">2019년 영화</a>
                 </td>
-                <td width="10%" style="text-align:center;">
-                    <a href="../5_평점순/평점순.html">평점순</a>
+                <td width="10%" style="text-align:center; border-style:solid; border-color:black black white black;">
+                    <a href="../5_평점순/평점순_관람객.html">평점순</a>
                 </td>
                 <td width="20%"></td>
             </tr> 
@@ -149,6 +147,7 @@
         <!--2021년 영화-->
         <div class="now_movie_reservation">
             <h1>2021년 영화</h1>
+            <!--국내영화-->
             <h3>국내 영화</h3>
             <table>
                 <tr>
@@ -187,26 +186,79 @@
                 <tr>
                     <th><br>모가디슈<br><img src="../images/icon/Yellow Star.png" width="12px">8.67</th>
                 
-                <td></td>
+                    <td></td>
                 
                     <th><br>보이스<br><img src="../images/icon/Yellow Star.png" width="12px">7.86</th>
                 
-                <td></td>
+                    <td></td>
                 
                     <th><br>발신제한<br><img src="../images/icon/Yellow Star.png" width="12px">7.60</th>
                 
-                <td></td>
+                    <td></td>
                 
                     <th><br>인질<br><img src="../images/icon/Yellow Star.png" width="12px">7.14</th>
                 
-                <td></td>
+                    <td></td>
                 
                     <th><br>싱크홀<br><img src="../images/icon/Yellow Star.png" width="12px">7.01</th>
                 </tr>
             </table>
+            <!--해외영화-->
             <h3>해외 영화</h3>   
-            
-            
+            <table>
+                <tr>
+                    <th><!--극장판 귀멸의 칼날:무한열차편-->
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=196051" target="_blank">
+                            <img src="https://movie-phinf.pstatic.net/20220331_264/1648693399684Fm31b_JPEG/movie_image.jpg">
+                        </a>
+                    </th>
+                    <td></td>
+                    <th><!--스파이더맨:노 웨이 홈-->
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=208077" target="_blank">
+                            <img src="https://movie-phinf.pstatic.net/20211215_297/1639556766975z0641_JPEG/movie_image.jpg">
+                        </a>
+                    </th>
+                    <td></td>
+                    <th><!--블랙 위도우-->
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=184318" target="_blank">
+                            <img src="https://movie-phinf.pstatic.net/20210617_272/1623906098516QjpeS_JPEG/movie_image.jpg">
+                        </a>
+                    </th>
+                    <td></td>
+                    <th><!--분노의 질주: 더 얼티메이트-->
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=189150" target="_blank">
+                            <img src="https://movie-phinf.pstatic.net/20210421_37/1618971733493B4ykS_JPEG/movie_image.jpg">
+                        </a>
+                    </th>
+                    <td></td>
+                    <th><!--이터널스-->
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=184311" target="_blank">
+                            <img src="https://movie-phinf.pstatic.net/20211026_97/1635213484861yCnwO_JPEG/movie_image.jpg">
+                        </a>
+                    </th>
+                </tr>
+            </table>
+            <table class="now_movie_reservation">
+                <tr>
+                    <th><br>극장판 귀멸의 칼날:무한열차편<br><img src="../images/icon/Yellow Star.png" width="12px">9.60</th>
+                
+                    <td></td>
+                
+                    <th><br>스파이더맨:노 웨이 홈<br><img src="../images/icon/Yellow Star.png" width="12px">9.11</th>
+                
+                    <td></td>
+                
+                    <th><br>블랙 위도우<br><img src="../images/icon/Yellow Star.png" width="12px">9.03</th>
+                
+                    <td></td>
+                
+                    <th><br>분노의 질주: 더 얼티메이트<br><img src="../images/icon/Yellow Star.png" width="12px">8.80</th>
+                
+                    <td></td>
+                
+                    <th><br>이터널스<br><img src="../images/icon/Yellow Star.png" width="12px">6.44</th>
+                </tr>
+            </table>  
         </div>
         <!--2020년 영화-->
         <div>
